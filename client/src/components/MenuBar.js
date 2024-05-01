@@ -10,29 +10,27 @@ function MenuBar() {
     return (
         <Menu pointing secondary>
           <Link to={"/"}>
+
           <MenuItem
             name='home'
             active={activeItem === 'home'}
             onClick={handleItemClick}
           />
+          </Link>
           <MenuItem
             name='messages'
             active={activeItem === 'messages'}
             onClick={handleItemClick}
           />
-          </Link>
-          <Link to={"/register"}>
           <MenuMenu position='right'>
-            
+            <Link to={"/register"}>
             <MenuItem
               name='register'
               active={activeItem === 'register'}
               onClick={handleItemClick}
             />
+            </Link>
           </MenuMenu>
-          </Link>
-          
-          
           <Link to={"/login"}>
           <MenuItem
           
